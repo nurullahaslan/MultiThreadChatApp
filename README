@@ -1,0 +1,25 @@
+-------------------------------------
+#Compiling
+-------------------------------------
+
+##jtalk.c
+
+gcc -c jtalk.c -lpthread
+
+gcc -g -o client jtalk.o -lpthread libfdr.a
+
+##jtalk_server.c
+
+gcc jtalk_server.c-lpthread -o server
+
+------------------------------------
+#Running
+------------------------------------
+
+./server [host] [port]
+
+./client [host] [port]
+************************************
+-NOT: "i386 architecture of input file `libfdr.a(fields.o)' is incompatible with i386:x86-64 output" hatasý ile karþýlaþýlýrsa
+libfdr.a yeniden derlenmelidir.
+
